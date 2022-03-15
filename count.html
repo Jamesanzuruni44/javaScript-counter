@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>word length</title>
+</head>
+<body>
+	<center>
+		<h2>ENTER WORD</h2>
+		<br>
+		<br>
+		<input type="text" id="txt" name="word" placeholder="please type anything here">
+		<div id="output"></div>
+		<br>
+		<br>
+		<button id="btn">CLICK HERE TO CALCULATE</button>
+	</center>
+	<style type="text/css">
+		input{
+			font-size: 28px;
+		}
+		#btn{
+			font-size: 18px;
+			cursor: pointer;
+		}
+		#output{
+			color:magenta;
+			font-size: 28px;
+			font-family:sans-serif;
+		}
+
+	</style>
+
+<script type="text/javascript">
+	let btn=document.getElementById("btn");
+
+	btn.addEventListener("click",function(){
+		let input=document.getElementById("txt").value;
+		let count=input.length;
+		let output=document.getElementById("output");
+		output.innerHTML=count;
+	});
+</script>
+</body>
+</html>
